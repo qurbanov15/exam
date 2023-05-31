@@ -1,0 +1,21 @@
+.myContainer{
+    .createApiData{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input{
+            height: 35px;
+            width: 80%;
+        }
+        button{
+            border: 0;
+            width: 100px;
+            padding: 15px;
+            background-color: brown;
+            font-size: larger;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}

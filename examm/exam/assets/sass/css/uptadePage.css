@@ -1,0 +1,19 @@
+.myContainer .uptadeApiData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.myContainer .uptadeApiData input {
+  height: 35px;
+  width: 80%;
+}
+.myContainer .uptadeApiData button {
+  border: 0;
+  width: 100px;
+  padding: 15px;
+  background-color: brown;
+  font-size: larger;
+  font-weight: 500;
+  color: white;
+}/*# sourceMappingURL=uptadePage.css.map */

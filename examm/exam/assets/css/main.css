@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a, ul, ol {
+  text-decoration: none !important;
+  list-style: none;
+  color: inherit !important;
+}
+
+img {
+  width: 100;
+}
+
+.myContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 765px) {
+  .myContainer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+nav .menuBtnn {
+  display: none;
+  color: rgb(235, 18, 18);
+  font-size: large;
+  border: 0;
+}
+nav .logo {
+  width: 30%;
+}
+nav #navMenu {
+  display: flex;
+  gap: 15px;
+}
+nav #navMenu li {
+  transition: 1s;
+  font-size: medium;
+  font-weight: 500;
+  color: white;
+}
+nav #navMenu li:hover {
+  color: #d73e4d;
+}
+nav #navMenu :nth-child(9) {
+  position: relative;
+}
+nav #navMenu :nth-child(9) ul {
+  background-color: rgb(100, 99, 99);
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  transition: 1s;
+  opacity: 0;
+}
+nav #navMenu :nth-child(9) ul li {
+  color: white;
+}
+nav #navMenu :nth-child(9):hover ul {
+  top: 20px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 920px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 765px) {
+  nav {
+    flex-direction: row;
+  }
+  nav #navMenu {
+    display: none;
+    flex-direction: row;
+  }
+  nav .menuBtnn {
+    display: block;
+    color: aliceblue;
+  }
+}
+header {
+  background-color: black;
+}
+header .myContainer .navMenuResponsive {
+  display: none;
+}
+header .myContainer .navMenuResponsive :nth-child(9) ul {
+  height: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 765px) {
+  header .myContainer .navMenuResponsive {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #e4d8d8;
+    position: absolute;
+    transition: 1s;
+  }
+  header .myContainer .menuClick15 {
+    height: 95vh;
+  }
+}
+#helloBizpro {
+  height: 95vh;
+}
+#helloBizpro .myContainer {
+  background-color: rgb(19, 18, 18);
+  height: 100%;
+}
+#helloBizpro .myContainer .carousel-item {
+  height: 100%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+  gap: 40px;
+}
+#helloBizpro .myContainer .carousel-item button {
+  padding: 15px 20px;
+  border: 1px solid #d73e4d;
+  background-color: transparent;
+  color: white;
+}
+
+#aboutBizpro .myContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+#aboutBizpro .myContainer .arrow {
+  height: 0;
+  width: 30px;
+  border: 2px solid #d73e4d;
+  border-radius: 3px;
+}
+#aboutBizpro .myContainer > p {
+  width: 60%;
+}
+#aboutBizpro .myContainer .bizproCards {
+  display: flex;
+}
+#aboutBizpro .myContainer .bizproCards .card {
+  width: 30%;
+  height: auto;
+  padding: 10px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#aboutBizpro .myContainer .bizproCards .card .cardTop {
+  width: 80%;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #d73e4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#aboutBizpro .myContainer .bizproCards .card .cardTop i {
+  font-size: 50px;
+}
+
+#meetTeam .myContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+#meetTeam .myContainer .arrow {
+  height: 0;
+  width: 30px;
+  border: 2px solid #d73e4d;
+  border-radius: 3px;
+}
+#meetTeam .myContainer > p {
+  width: 60%;
+}
+#meetTeam .myContainer .meetTeamCard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#meetTeam .myContainer .meetTeamCard .card {
+  width: 31%;
+  background-image: url(https://preview.colorlib.com/theme/bizpro/images/team/1.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardTop {
+  position: relative;
+  height: 250px;
+  transition: 2s;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardTop .hoverCard {
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgba(163, 167, 167, 0.3);
+  color: #bdbbbb;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardTop .hoverCard p {
+  width: 70%;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardTop .hoverCard h3 {
+  padding: 12px;
+  border: 1px solid #d73e4d;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardTop:hover .hoverCard {
+  height: 250px;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom {
+  height: 100px;
+  background-color: #cac8c8;
+  position: relative;
+  transition: 1s;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom .hoverCardBottom {
+  transition: 1s;
+  position: absolute;
+  opacity: 0;
+  top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom .hoverCardBottom > div {
+  display: grid;
+  place-items: center;
+  border: 1px solid #d73e4d;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  transition: 1s;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom .hoverCardBottom > div:hover {
+  background-color: #d73e4d;
+  color: white;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom .notHoverCardBottom {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20%;
+  position: absolute;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom:hover .hoverCardBottom {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+}
+#meetTeam .myContainer .meetTeamCard .card .cardBottom:hover .notHoverCardBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: absolute;
+  opacity: 0;
+  top: -150px;
+}
+
+#latestBlog .myContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+#latestBlog .myContainer .arrow {
+  height: 0;
+  width: 30px;
+  border: 2px solid #d73e4d;
+  border-radius: 3px;
+}
+#latestBlog .myContainer > p {
+  width: 60%;
+}
+#latestBlog .myContainer .latestBlogcard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#latestBlog .myContainer .latestBlogcard .card {
+  border: 0;
+  width: 31%;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardTop {
+  background-image: url(https://preview.colorlib.com/theme/bizpro/images/blog/1.jpg.webp);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardTop .cardTopHover {
+  height: 100%;
+  opacity: 0;
+  transition: 1s;
+  background-color: rgba(189, 187, 187, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardTop .cardTopHover i {
+  color: #d73e4d;
+  font-size: 30px;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardTop:hover .cardTopHover {
+  height: 100%;
+  opacity: 1;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardBottom {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#latestBlog .myContainer .latestBlogcard .card .cardBottom h6 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 765px) {
+  #meetTeam .myContainer .meetTeamCard {
+    flex-direction: column;
+  }
+  #meetTeam .myContainer .meetTeamCard .card {
+    width: 100%;
+  }
+  #latestBlog .myContainer .latestBlogcard {
+    flex-direction: column;
+  }
+  #latestBlog .myContainer .latestBlogcard .card {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  margin-top: 100px;
+}
+
+.myContainer .createApiData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.myContainer .createApiData input {
+  height: 35px;
+  width: 80%;
+}
+.myContainer .createApiData button {
+  border: 0;
+  width: 100px;
+  padding: 15px;
+  background-color: brown;
+  font-size: larger;
+  font-weight: 500;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

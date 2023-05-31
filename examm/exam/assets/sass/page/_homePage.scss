@@ -1,0 +1,281 @@
+// sectiom helloBizpro start
+#helloBizpro{
+    height: 95vh;
+    .myContainer{
+        background-color: rgb(19, 18, 18);
+        height: 100%;
+        .carousel-item{
+            height: 100%;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           padding: 150px;
+           gap: 40px;
+           button{
+            padding: 15px 20px;
+            border: 1px solid #d73e4d;
+            background-color: transparent;
+            color: white;
+           }
+        }
+    }
+}
+// section helloBizpro end
+// section aboutBizpro start
+#aboutBizpro{
+    .myContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        .arrow{
+            height: 0;
+            width: 30px;
+            border: 2px solid #d73e4d;
+            border-radius: 3px;
+        }
+        >p{
+            width: 60%;
+        }
+        .bizproCards{
+            display: flex;
+           
+           
+            .card{
+                
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                border: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .cardTop{
+                    width: 80%;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 1px solid #d73e4d;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+// section aboutBizpro end
+// section meetTeam start
+#meetTeam{
+    .myContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        .arrow{
+            height: 0;
+            width: 30px;
+            border: 2px solid #d73e4d;
+            border-radius: 3px;
+        }
+        >p{
+            width: 60%;
+        }
+        .meetTeamCard{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .card{
+                width: 31%;
+                background-image: url(https://preview.colorlib.com/theme/bizpro/images/team/1.jpg.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                .cardTop{
+                    position: relative;
+                    height: 250px;
+                    transition: 2s;
+                    
+                    .hoverCard{
+                        height: 0;
+                        position: absolute;
+                        overflow: hidden;
+                        background-color: rgba(163, 167, 167, 0.3);
+                        color: #bdbbbb;
+                        transition: 1s;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                            width: 70%;
+                        }
+                        h3{
+                            padding: 12px;
+                            border: 1px solid #d73e4d;
+                        }
+
+                    }
+                    
+                }
+                .cardTop:hover{
+                    .hoverCard{
+                        height: 250px;
+                    }
+                }
+                .cardBottom{
+                    height: 100px;
+                    background-color: #cac8c8;
+                    position: relative;
+                    transition: 1s;
+                    .hoverCardBottom{
+                       
+                       transition: 1s;
+                        position: absolute;
+                        opacity: 0;
+                        top: 150px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 10px;
+                        >div{
+                            display: grid;
+                            place-items: center;
+                            border: 1px solid #d73e4d;
+                            border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                            transition: 1s;
+                        }
+                        >div:hover{
+                            background-color: #d73e4d;
+                            color: white;
+                        }
+                        
+                    }
+                    .notHoverCardBottom{
+                        transition: 1s;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       padding: 20px 20%;
+                       position: absolute;
+                    
+                    }
+                }
+                .cardBottom:hover{
+                    .hoverCardBottom{
+                       
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        opacity: 1;
+                        
+                    }
+                    .notHoverCardBottom{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 30px;
+                        position: absolute;
+                        opacity: 0;
+                        top: -150px;
+                     }
+                }
+            }
+        }
+    }
+}
+// section meetTeam end
+// section latestBlog start
+#latestBlog{
+    .myContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        .arrow{
+            height: 0;
+            width: 30px;
+            border: 2px solid #d73e4d;
+            border-radius: 3px;
+        }
+        >p{
+            width: 60%;
+        }
+        .latestBlogcard{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .card{
+                border: 0;
+                width: 31%;
+               .cardTop{
+                background-image:url(https://preview.colorlib.com/theme/bizpro/images/blog/1.jpg.webp);
+                height: 250px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                .cardTopHover{
+                    height: 100%;
+                    opacity: 0;
+                    transition: 1s;
+                    background-color: rgb(189, 187, 187, 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    i{
+                        color: #d73e4d;
+                        font-size: 30px;
+
+                    }
+                }
+               }
+               .cardTop:hover{
+                .cardTopHover{
+                    height: 100%;
+                    opacity: 1;
+                }
+               }
+               .cardBottom{
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h6{
+                    font-weight: 500;
+                }
+               }
+               
+            }
+        }
+    }
+}
+// section latestBlogcard end
+@media screen and (max-width:765px){
+    #meetTeam{
+        .myContainer{
+            .meetTeamCard{
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #latestBlog{
+        .myContainer{
+            .latestBlogcard{
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

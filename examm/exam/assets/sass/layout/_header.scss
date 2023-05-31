@@ -1,0 +1,49 @@
+header{
+    background-color: black;
+    .myContainer{
+        .menuresp{
+            color: #fffdfd;
+            display: none;
+            :nth-child(9){
+                ul{
+                    height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+
+    }
+   
+   
+
+}
+@media screen and (max-width:765px){
+    header{
+        .myContainer{
+            .menuresp{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: #fffdfd;
+              position: absolute;
+               transition: 1s;
+           
+
+            }
+            .menuClick{
+                height: 95vh;
+                li{
+                    color: #fffdfd;
+                }
+               
+        
+        
+            }
+         
+    
+           
+           
+        }
+    }
+}
